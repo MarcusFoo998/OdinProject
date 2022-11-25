@@ -1,0 +1,193 @@
+/* There are a total of 4 sections of the webpage */
+
+/* First section of the webpage which includes the header (header logo and 3 links on the right side) and This Website is awesome (some text on the left and image on the right) */
+body {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 20px;
+    margin: 0;
+    border: 0;
+}
+
+.header.left {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.Info1 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.left1 {
+   width: 35%;
+}
+
+.left1 p {
+    margin: 20px;
+    margin-left: 0px;
+
+}
+
+img {
+   width: 500px;
+}
+
+.signup-button {
+    color:#F9FAF8;
+    border-radius: 7px;
+    border: 0;
+    background-color: #3882F6;
+    padding: 5px 25px;
+    font-size: 12px;
+
+}
+
+/* Second section of the website contains Some Random Information section. This section has 4 pictures and some text below them. */
+.header2 {
+    text-align: center;
+}
+
+.title2 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.picture img {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.picture {
+    max-width: 200px;
+}
+
+
+/* Header 3 (The header with a quote from Thor, God of Thunder) */
+.header3 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.container2 {
+    width: 60%;
+}
+
+#Quote {
+   font-size: 36px;
+   font-style: light italic; 
+   color: #1F2937;   
+   margin: 0;
+}
+
+#Author {
+    font-size: 32px;
+    font-style: light italic; 
+    color: #1F2937;
+    font-weight: bolder;
+    float:right;
+    margin: 0;
+}
+
+/* Header 4 ("Call to action! It's time!" with a sign up button on the right side) */
+.header4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 {
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.title3 {
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.container3 p {
+    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subContainer, .buttonContainer {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.signUp {
+    border-color: white;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 7px;
+    padding: 5px 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Footer (Copyright) */
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+}
+
