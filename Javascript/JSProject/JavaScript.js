@@ -68,14 +68,10 @@ function game() {
 }
 
 let sign = prompt("Enter one of the three - Rock, Paper, Scissors");
-userInput = sign.toLowerCase();
+let userAns = sign.toLowerCase();
 
-if(userInput != "rock", "paper", "scissors") {
-    for(let i = 0; i<=10; i++) {
-        prompt("You've entered an invalid parameter. Please enter one of the three - Rock, Paper, Scissors");
-    };    
-} else {
-     game(userInput);
+if(userAns == ("rock" || "paper" || "scissors")) {
+ game(userAns);
 };
 
 function fiveGames() {
