@@ -1,6 +1,7 @@
 
 
 let flag = 0;
+let playerSelection = "";
 
 //Gets a random element from the objects array;
 function getComputerChoice() {
@@ -67,18 +68,47 @@ function game() {
 
 }
 
-let sign = prompt("Enter one of the three - Rock, Paper, Scissors");
-let userAns = sign.toLowerCase();
+window.onload = function(){
+    let rock = document.getElementById("rock");
+    let paper = document.getElementById("paper");
+    let scissors = document.getElementById("scissors");
 
-if(userAns == ("rock" || "paper" || "scissors")) {
- game(userAns);
+    rock.addEventListener("click", rockPrint);
+    paper.addEventListener("click", paperPrint);
+    scissors.addEventListener("click", scissorsPrint);
 };
 
-function fiveGames() {
-    for(let i=0; i<5; i++){
-        game();
-    }
+function rockPrint(){
+    playerSelection = "rock";
+    console.log(playerSelection);
+};
+
+function paperPrint(){
+    playerSelection = "paper";
+    console.log(playerSelection);
+};
+
+function scissorsPrint(){
+    playerSelection = "scissors";
+    console.log(playerSelection);
+};
+
+
+
+
+
+// let sign = prompt("Enter one of the three - Rock, Paper, Scissors");
+// let userAns = sign.toLowerCase();
+
+// if(userAns == ("rock" || "paper" || "scissors")) {
+//  game(userAns);
+// };
+
+// function fiveGames() {
+//     for(let i=0; i<5; i++){
+//         game();
+//     }
     
-}
+// }
 
 
